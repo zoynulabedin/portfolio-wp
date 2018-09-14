@@ -36,7 +36,7 @@ function portfolio_assets(){
 
 
     wp_enqueue_script( "portfolio-modernizr", get_theme_file_uri( '/assets/js/plugins.min.js' ),null,'1.0' );
-    wp_enqueue_script( "google-map", "//maps.google.com/maps/api/js?sensor=false");
+    wp_enqueue_script( "google-map", "http://maps.google.com/maps/api/js?sensor=false");
     wp_enqueue_script( "portfolio-plugin", get_theme_file_uri( '/assets/js/main.js' ),array('jquery'),'1.0', true );
     wp_enqueue_script( "portfolio-main", get_theme_file_uri( '/assets/js/main-demo.js' ),array('jquery'),'1.0', true );
     wp_enqueue_script( "portfolio-cust", get_theme_file_uri( '/assets/js/custom.js' ),array('jquery'),'1.0', true );
