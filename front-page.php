@@ -1,150 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" data-random-animation="false" data-animation="11">
-    
-<!-- Mirrored from watson-vcard.netlify.com/index-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Sep 2018 15:14:49 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-
-        <!--Meta Tags-->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="vcard, resume, personal, portfolio, cv, card, responsive" />
-        <meta name="description" content="vCard / Resume / Personal Template" />
-        <meta name="author" content="cosmos-themes" />
-
-        <!--Page Title-->
-        <title>Watson - vCard / Resume/ CV Template</title>
-
-        <!--Plugins Css-->
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cs/plugins.css">
-        <!--Main Styles Css-->
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cs/style-dark.css">
-
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cs/style-demo.css">
-
-        <!--Color Css-->
-        <link class="site-color" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cs/blue-color.css">
-
-        <!--Modernizr Js-->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.js"></script>
-
-        <!--Favicons-->
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" type="image/x-icon">
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="../www.googletagmanager.com/gtag/jsc150?id=UA-122650090-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-122650090-3');
-        </script>
-
-    </head>
-
-    <body>
-
-        <div class="theme-options dark">
-            <div class="toggle-btn">
-                <span><i class="fas fa-cog"></i></span>
-            </div>
-            <div class="theme-menu">
-                <div class="page-transitions">
-                    <h4>Page Animation</h4>
-                    <select class="demo-select form-control" id="anim-type">
-                        <option>Choose</option>
-                        <option value="0">Random</option>
-                    </select>
-                </div>
-                <div class="theme-color">
-                    <h4 class="mt-20">Colors</h4>
-                    <ul>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/assets/cs/blue-color.css" style="background-color: #00A3E1;;"></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/assets/cs/red-color.css" style="background-color: #E82A2A;"></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/assets/cs/green-color.css" style="background-color: #6ac045;"></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/assets/cs/yellow-color.css" style="background-color: #D1A71D;"></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/assets/cs/pink-color.css" style="background-color: #FF1493;"></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/assets/cs/purple-color.css" style="background-color: #5078FF;"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!--Preloader Start-->
-        <div class="preloader">
-            <div class="loader">
-                <!--Your Name-->
-                <h4>ZOYNUL ABEDIN</h4>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <!--Preloader End-->
-
-        <div id="page">
-
-            <!--Header Start-->
-            <header>
-                <div class="header-content">
-
-                    <!--Mobile Header-->
-                    <div class="header-mobile">
-                        <a class="header-toggle"><i class="fas fa-bars"></i></a>
-                        <h2>ZOYNUL ABEDIN</h2>
-                    </div>
-
-                    <!--Main Header-->
-                    <div class="header-main" data-simplebar>
-                        <div class="image-container">
-                            <h2 class="header-name">ZOYNUL ABEDIN</h2>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-img.jpg" alt="profile-pic">
-                        </div>
-
-                        <!--Nav Menus-->
-                        <nav class="nav-menu">
-                            <ul>
-                                <li><a href="#home" class="pt-link active"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
-                                <li><a href="#about" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
-                                <li><a href="#resume" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
-                                <li><a href="#portfolio" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
-                                <li><a href="#blog" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
-                                <li><a href="#contact" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-envelope"></i></span>Contact</a></li>
-                            </ul>
-                        </nav>
-
-                        <!--Nav Footer-->
-                        <div class="nav-footer">
-                            <!--Social Links-->
-                            <ul class="social">
-                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble-square"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance-square"></i></a></li>
-                            </ul>
-                            <!--Copyright Text-->
-                            <div class="copy">
-                                <p>2018 &copy; Cosmos-Themes.<br>All Right Reserved.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </header>
-            <!--Header End-->
+<?php get_header(); ?>
 
 
             <!--Main Start-->
             <div id="main" class="site-main">
 
                 <!--Banner Section Start-->
-                <section id="home" class="banner-section pt-page" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/background/home-bg.jpg')">
+                <section id="home" class="banner-section pt-page" style="background-image: url('img/background/home-bg.jpg')">
 
                     <div class="banner-content">
                         <!--Banner Text-->
@@ -187,7 +48,7 @@
 
                                 <!--Signature Image-->
                                 <div class="signature mt-20">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/signature-white.png" alt="">
+                                    <img src="img/signature-white.png" alt="">
                                 </div>
                             </div>
 
@@ -271,63 +132,63 @@
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-01.png" alt="">
+                                        <img src="img/clients/client-01.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-02.png" alt="">
+                                        <img src="img/clients/client-02.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-03.png" alt="">
+                                        <img src="img/clients/client-03.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-04.png" alt="">
+                                        <img src="img/clients/client-04.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-05.png" alt="">
+                                        <img src="img/clients/client-05.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-06.png" alt="">
+                                        <img src="img/clients/client-06.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-07.png" alt="">
+                                        <img src="img/clients/client-07.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-08.png" alt="">
+                                        <img src="img/clients/client-08.png" alt="">
                                     </a>
                                 </div>
 
                                 <!--Client Logo-->
                                 <div class="client-logo">
                                     <a href="#">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/client-09.png" alt="">
+                                        <img src="img/clients/client-09.png" alt="">
                                     </a>
                                 </div>
 
@@ -349,7 +210,7 @@
                                             <p>Ipsum ab necessitatibus numquam vitae quis. Nobis nostrum deserunt suscipit eos fugit. Consectetur dolorum temporibus facilis impedit exercitationem dignissimos.</p>
                                         </div>
                                         <div class="testimonial-meta">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials/author-1.jpg" alt="">
+                                            <img src="img/testimonials/author-1.jpg" alt="">
                                             <div class="meta-info">
                                                 <h4>Kate Fox</h4>
                                                 <p>Digital Marketing Executive</p>
@@ -363,7 +224,7 @@
                                             <p>Ipsum ab necessitatibus numquam vitae quis. Nobis nostrum deserunt suscipit eos fugit. Consectetur dolorum temporibus facilis impedit exercitationem dignissimos.</p>
                                         </div>
                                         <div class="testimonial-meta">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials/author-2.jpg" alt="">
+                                            <img src="img/testimonials/author-2.jpg" alt="">
                                             <div class="meta-info">
                                                 <h4>Emma Jones</h4>
                                                 <p>Creative Director</p>
@@ -377,7 +238,7 @@
                                             <p>Ipsum ab necessitatibus numquam vitae quis. Nobis nostrum deserunt suscipit eos fugit. Consectetur dolorum temporibus facilis impedit exercitationem dignissimos.</p>
                                         </div>
                                         <div class="testimonial-meta">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials/author-3.jpg" alt="">
+                                            <img src="img/testimonials/author-3.jpg" alt="">
                                             <div class="meta-info">
                                                 <h4>Jack Smith</h4>
                                                 <p>Marketing Director</p>
@@ -643,9 +504,9 @@
 
                             <!--Portfolio Item-->
                             <div class="item col-lg-4 col-sm-6 brand graphic">
-                                <a class="image-link" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-1.jpg">
+                                <a class="image-link" href="img/portfolio/img-1.jpg">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-1.jpg" alt="">
+                                        <img src="img/portfolio/img-1.jpg" alt="">
                                         <figcaption>
                                             <h4>Book Design</h4>
                                             <p>Graphic</p>
@@ -658,7 +519,7 @@
                             <div class="item col-lg-4 col-sm-6 design">
                                 <a class="ajax-link" href="single-work.html">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-2.jpg" alt="">
+                                        <img src="img/portfolio/img-2.jpg" alt="">
                                         <figcaption>
                                             <h4>Notepad Design</h4>
                                             <p>Design</p>
@@ -671,7 +532,7 @@
                             <div class="item col-lg-4 col-sm-6 design graphic">
                                 <a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-3.jpg" alt="">
+                                        <img src="img/portfolio/img-3.jpg" alt="">
                                         <figcaption>
                                             <h4>Creative Cup</h4>
                                             <p>Graphic</p>
@@ -682,9 +543,9 @@
 
                             <!--Portfolio Item-->
                             <div class="item col-lg-4 col-sm-6 design">
-                                <a class="image-link" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-4.jpg">
+                                <a class="image-link" href="img/portfolio/img-4.jpg">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-4.jpg" alt="">
+                                        <img src="img/portfolio/img-4.jpg" alt="">
                                         <figcaption>
                                             <h4>Business Card</h4>
                                             <p>Design</p>
@@ -697,7 +558,7 @@
                             <div class="item col-lg-4 col-sm-6 brand">
                                 <a class="ajax-link" href="single-work.html">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-5.jpg" alt="">
+                                        <img src="img/portfolio/img-5.jpg" alt="">
                                         <figcaption>
                                             <h4>Back Pack</h4>
                                             <p>Brand</p>
@@ -710,7 +571,7 @@
                             <div class="item col-lg-4 col-sm-6 design">
                                 <a class="ajax-link" href="single-work.html">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-6.jpg" alt="">
+                                        <img src="img/portfolio/img-6.jpg" alt="">
                                         <figcaption>
                                             <h4>Door Hangar</h4>
                                             <p>Design</p>
@@ -721,9 +582,9 @@
 
                             <!--Portfolio Item-->
                             <div class="item col-lg-4 col-sm-6 graphic">
-                                <a class="image-link" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-7.jpg">
+                                <a class="image-link" href="img/portfolio/img-7.jpg">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-7.jpg" alt="">
+                                        <img src="img/portfolio/img-7.jpg" alt="">
                                         <figcaption>
                                             <h4>Notepad Design</h4>
                                             <p>graphic</p>
@@ -734,9 +595,9 @@
 
                             <!--Portfolio Item-->
                             <div class="item col-lg-4 col-sm-6 brand">
-                                <a class="image-link" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-8.jpg">
+                                <a class="image-link" href="img/portfolio/img-8.jpg">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-8.jpg" alt="">
+                                        <img src="img/portfolio/img-8.jpg" alt="">
                                         <figcaption>
                                             <h4>Creative Flyer</h4>
                                             <p>Brand</p>
@@ -749,7 +610,7 @@
                             <div class="item col-lg-4 col-sm-6 brand">
                                 <a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-9.jpg" alt="">
+                                        <img src="img/portfolio/img-9.jpg" alt="">
                                         <figcaption>
                                             <h4>Mobile App</h4>
                                             <p>Brand</p>
@@ -760,9 +621,9 @@
 
                             <!--Portfolio Item-->
                             <div class="item col-lg-4 col-sm-6 graphic">
-                                <a class="image-link" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-10.jpg">
+                                <a class="image-link" href="img/portfolio/img-10.jpg">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-10.jpg" alt="">
+                                        <img src="img/portfolio/img-10.jpg" alt="">
                                         <figcaption>
                                             <h4>Cup Design</h4>
                                             <p>Graphic</p>
@@ -775,7 +636,7 @@
                             <div class="item col-lg-4 col-sm-6 brand graphic">
                                 <a class="ajax-link" href="single-work.html">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/img-11.jpg" alt="">
+                                        <img src="img/portfolio/img-11.jpg" alt="">
                                         <figcaption>
                                             <h4>Creative Box</h4>
                                             <p>brand</p>
@@ -805,7 +666,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-1.jpg" alt="#">
+                                        <img src="img/blog/img-1.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Web Design</span>
@@ -818,7 +679,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-2.jpg" alt="#">
+                                        <img src="img/blog/img-2.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Personal</span>
@@ -831,7 +692,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-3.jpg" alt="#">
+                                        <img src="img/blog/img-3.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Design</span>
@@ -844,7 +705,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-4.jpg" alt="#">
+                                        <img src="img/blog/img-4.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Traveling</span>
@@ -857,7 +718,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-5.jpg" alt="#">
+                                        <img src="img/blog/img-5.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Web Design</span>
@@ -870,7 +731,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-6.jpg" alt="#">
+                                        <img src="img/blog/img-6.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Technology</span>
@@ -883,7 +744,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-7.jpg" alt="#">
+                                        <img src="img/blog/img-7.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">LifeStyle</span>
@@ -896,7 +757,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-8.jpg" alt="#">
+                                        <img src="img/blog/img-8.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Technology</span>
@@ -909,7 +770,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <a href="blog-dark.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/img-9.jpg" alt="#">
+                                        <img src="img/blog/img-9.jpg" alt="#">
                                     </div>
                                     <div class="blog-content">
                                         <span class="cat">Traveling</span>
@@ -1026,31 +887,4 @@
 
         </div>
 
-        <!--Ajax Portfolio Container Start-->
-        <div class="ajax-portfolio-popup" data-simplebar>
-            <span class="ajax-loader"></span>
-            <div class="navigation-wrap">
-                <span class="popup-close"><i class="fas fa-times-circle"></i></span>
-            </div>
-            <div class="content-wrap">
-                <div class="popup-content"></div>
-            </div>
-        </div>
-        <!--Ajax Portfolio Container End-->
-
-        <!--Jquery JS-->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.min.js"></script>
-        <!--Plugins JS-->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/plugins.min.js"></script>
-        <!--Google Map Api-->
-        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-        <!--Site Main JS-->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
-
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main-demo.js"></script>
-
-    </body>
-
-<!-- Mirrored from watson-vcard.netlify.com/index-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Sep 2018 15:15:02 GMT -->
-</html>
-
+        <?php get_footer(); ?>
