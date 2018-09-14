@@ -13,5 +13,4 @@
         <?php wp_footer(); ?>
     </body>
 
-<!-- Mirrored from watson-vcard.netlify.com/index-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Sep 2018 15:15:02 GMT -->
 </html>
