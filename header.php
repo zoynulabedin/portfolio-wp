@@ -146,7 +146,7 @@
                         <!--Nav Footer-->
                         <div class="nav-footer">
 
-                        <?php $social = get_field('footer_social', 'portfolio');?>
+                        <?php $social = get_field('footer_social', 'options');?>
                             <!--Social Links-->
                             <ul class="social">
                                 <?php if($social['facebook']):?>
@@ -168,11 +168,7 @@
                             </ul>
                             <!--Copyright Text-->
                             <div class="copy">
-                                <?php if(get_field('footer_text')) : ?>
-                                <p> <?php echo esc_html(get_field('footer_text')); ?></p>
-                                <?php else :?>
-                                <p> <?php _e('2018 © zoynul.All Right Reserved.','portfolio'); ?></p>
-                                <?php endif; ?>
+                                <p>2018 &copy; Cosmos-Themes.<br>All Right Reserved.</p>
                             </div>
                         </div>
 
