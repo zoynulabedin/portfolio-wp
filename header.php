@@ -172,6 +172,7 @@
                                 <p> <?php echo esc_html(get_field('footer_text')); ?></p>
                                 <?php else :?>
                                 <p> <?php _e('2018 © zoynul.All Right Reserved.','portfolio'); ?></p>
+                                <?php endif; ?>
                             </div>
                         </div>
 
