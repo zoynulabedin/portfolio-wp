@@ -244,6 +244,7 @@ function ajaxPortfolioSetup($ajaxLink, $ajaxContainer) {
 }
 
 
+
 /********** Function Map Initialization **********/
 function initMap() {
     var latitude = $("#map").data('latitude'),

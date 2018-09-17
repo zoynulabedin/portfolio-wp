@@ -14,39 +14,65 @@ function portfolio_setup(){
    add_theme_support( 'html5',array('search-form','comment-list') );
    add_theme_support( 'post-formats',array('image','gallery','video','audio','link','quote') );
    add_editor_style( '/assets/css/editor-style.css' );
-   register_nav_menu('topmenu', __('Top Menu','portfolio') );
-   add_image_size('portfolio-image',400,400,true);
-
+   
    register_nav_menus(array(
-	   'footer-left'	=>__("Footer Left","portfolio"),
-	   'footer-middle'	=>__("Footer Middle","portfolio"),
-	   'footer-right'	=>__("Footer Right","portfolio"),
+	   'main-menu'	=>__("Main Menu","portfolio"),
+	   
    ));
 }
 add_action('after_setup_theme','portfolio_setup');
 
-function portfolio_assets(){
-    wp_enqueue_style('plugin-css',get_theme_file_uri( '/assets/css/plugins.css' ),null,'1.0');
-    wp_enqueue_style('dark-css',get_theme_file_uri( '/assets/css/style-dark.css' ),null,'1.0');
-    wp_enqueue_style('demo-css',get_theme_file_uri( '/assets/css/style-demo.css' ),null,'1.0');
-    wp_enqueue_style('portfolio-color',get_theme_file_uri( '/assets/css/blue-color.css' ),null,'1.0');
 
-	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri() );
+/*** Enqueue scripts and styles. */
+function portfolio_scripts() {
+	/*** Enqueue styles. */
+	wp_enqueue_style('plugins', get_template_directory_uri() . '/assets/css/plugins.css', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/css/plugins.css' )), 'all');
+	wp_enqueue_style('dark', get_template_directory_uri() . '/assets/css/style-dark.css', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/css/style-dark.css' )), 'all');
+	wp_enqueue_style('demo', get_template_directory_uri() . '/assets/css/style-demo.css', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/css/style-demo.css' )), 'all');
+	wp_enqueue_style('portfolio', get_template_directory_uri() . '/assets/css/blue-color.css', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/css/blue-color.css' )), 'all');
+    wp_enqueue_style( 'portfolio-style', get_stylesheet_uri(), array(), date("ymd-Gis", filemtime( get_stylesheet_directory())));
+    
+	/*** Enqueue scripts. */
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery-js', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/js/jquery.min.js' )), true);
+	wp_enqueue_script('modernizer', get_template_directory_uri() . '/assets/js/modernizr.js', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/js/modernizr.js' )), false);
 	
-
-
-    wp_deregister_script('jquery');
-    wp_enqueue_script( "portfolio-modernizr", get_theme_file_uri( '/assets/js/plugins.min.js' ), array('jquery'),'1.0', true);
-    // wp_enqueue_script( "google-map", "http://maps.google.com/maps/api/js?sensor=false");
-    wp_enqueue_script( "main-js", get_theme_file_uri( '/assets/js/main.js' ),array('jquery'),'1.0', true );
-    wp_enqueue_script( "demo-js", get_theme_file_uri( '/assets/js/main-demo.js' ),array('jquery'),'1.0', true );
-    wp_enqueue_script( "portfolio-cust", get_theme_file_uri( '/assets/js/custom.js' ),array('jquery'),'1.0', true );
+	wp_enqueue_script('plugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array('jquery'), date("ymd-Gis", filemtime( get_template_directory() . '/assets/js/plugins.min.js' )), true);
+	wp_enqueue_script('main', get_template_directory_uri('jquery') . '/assets/js/main.js', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/js/main.js' )), true);
+	wp_enqueue_script('demo', get_template_directory_uri() . '/assets/js/main-demo.js', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/js/main-demo.js' )), true);
+	wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.js', array(), date("ymd-Gis", filemtime( get_template_directory() . '/assets/js/custom.js' )), true);
 }
-add_action('wp_enqueue_scripts','portfolio_assets');
+add_action( 'wp_enqueue_scripts', 'portfolio_scripts' );
 
 require get_template_directory() . '/inc/tgm.php';
 require get_template_directory() . '/inc/attachments.php';
 
+
+/* ACF OPTIONS PAGE */
+if(function_exists('acf_add_options_page')) {
+    $option_page = acf_add_options_page(
+        array(
+            'page_title'  => 'Theme Options',
+            'menu_title'  => 'Theme Options',
+            'menu_slug'   => 'theme-options',
+            'capability'  => 'edit_posts',
+            'redirect'    => true,
+            'position' => 61,
+            'icon_url'    => 'dashicons-hammer'
+        )
+    );
+}
+
+/*
+* Menu 
+*/
+
+function add_menuclass($customClass) {
+	return preg_replace('/<a /', '<a class="pt-link"', $customClass, 1);
+  }
+  add_filter('wp_nav_menu','add_menuclass');
+
+  
 
 function portfolio_pagination(){
     global $wp_query;
@@ -86,40 +112,5 @@ function portfolio_about(){
 }
 add_action("widgets_init","portfolio_about");
 
-function portfolio_search_form($form){ 
-
-	$home = home_url("/");
-	$button = __("Search","portfolio");
-	$lebel = __("Search for:","portfolio");
-	$post_type = <<<PT
-	<input type="hidden" name="post_type" value="post">
-PT;
-
-if(is_post_type_archive('book')){
-	$post_type = <<<PT
-	<input type="hidden" name="post_type" value="book">
-PT;
-};
-
-	$newform = <<<FORM
-
-	
-	<form role="search" method="get" class="header__search-form" action="{$home}">
-	<label>
-		<span class="hide-content"><?php _e("{$lebel}","portfolio"); ?></span>
-		<input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="{$lebel}" autocomplete="off">
-	</label>
-	{$post_type}
-	<input type="submit" class="search-submit" value="{$button}">
-</form>
-
-FORM;
-
-return $newform;
-
-
-
-}
-add_filter("get_search_form","portfolio_search_form");
 
 
