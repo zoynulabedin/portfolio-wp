@@ -9,7 +9,7 @@
       <div id="main" class="site-main">
 
 <!--Banner Section Start-->
-<section id="home" class="banner-section pt-page" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/background/home-bg.jpg')">
+<section id="<?php  do_shortcode(get_field('section_id'));?>" class="banner-section pt-page" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/background/home-bg.jpg')">
 
     <div class="banner-content">
         <!--Banner Text-->
@@ -33,7 +33,7 @@
 
 
 <!--About Section Start-->
-<section id="about" class="about-section pt-page">
+<section id="<?php  do_shortcode(get_field('section_id'));?>" class="about-section pt-page">
     <div class="section-container">
         <!--Page Heading-->
         <div class="page-heading">
@@ -261,7 +261,7 @@
 
 
 <!--Resume Section Start-->
-<section id="resume" class="resume-section pt-page">
+<section id="<?php  do_shortcode(get_field('section_id'));?>" class="resume-section pt-page">
     <div class="section-container">
         <div class="page-heading">
             <span class="icon"><i class="lnr lnr-license"></i></span>
@@ -482,7 +482,7 @@
 
 
 <!--Porfolio Section Start-->
-<section id="portfolio" class="portfolio-section pt-page">
+<section id="<?php  do_shortcode(get_field('section_id'));?>" class="portfolio-section pt-page">
     <div class="section-container">
 
         <!--Page Heading-->
@@ -656,7 +656,7 @@
 
 
 <!--Blog Section Start-->
-<section id="blog" class="blog-section pt-page">
+<section id="<?php  do_shortcode(get_field('section_id'));?>" class="blog-section pt-page">
     <div class="section-container">
 
         <!--Page Heading-->
@@ -792,7 +792,7 @@
 
 
 <!--Contact Section Start-->
-<section id="contact" class="contact-section pt-page">
+<section id="<?php  do_shortcode(get_field('section_id'));?>" class="contact-section pt-page">
     <div class="section-container">
 
         <!--Page Heading-->
